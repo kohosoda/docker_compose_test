@@ -1,0 +1,2 @@
+# mongo_test データベース / kyujin コレクションを作成した上で、kyujin コレクションに kyujin.json のデータをインポートする。
+mongoimport --authenticationDatabase admin --username root --password root --db mongo_test --collection kyujin --file /docker-entrypoint-initdb.d/kyujin.json --jsonArray
